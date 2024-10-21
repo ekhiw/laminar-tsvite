@@ -78,7 +78,7 @@ import {
             justify={'flex-end'}
             direction={'row'}
             spacing={6}>
-            <ColorModeSwitcher />
+            {/* <ColorModeSwitcher /> */}
             {/*<Button*/}
             {/*  as={'a'}*/}
             {/*  fontSize={'sm'}*/}
@@ -216,7 +216,7 @@ import {
         p={4}
         display={{ md: 'none' }}>
         {NAV_ITEMS.map((navItem) => (
-            <Box>{
+            <Box key={`${navItem.label}${Math.random()}`}>{
                 navItem.isExternal == true ?
                 <Link 
                     href={navItem.href ?? '#' }

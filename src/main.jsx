@@ -12,7 +12,12 @@ const colors = {
   },
 }
 
-const theme = extendTheme({ colors })
+const config = {
+  initialColorMode: 'dark',
+  useSystemColorMode: true,
+}
+
+const theme = extendTheme({ colors,config })
 
 const rootElement = document.getElementById('root')
 ReactDOM.createRoot(rootElement).render(

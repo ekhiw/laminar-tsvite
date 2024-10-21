@@ -12,52 +12,14 @@ import {
 import { ReactElement } from 'react'
 import {
   FcAbout,
-  FcAssistant,
+  FcSmartphoneTablet,
   FcCollaboration,
-  FcDonate,
+  FcElectronics,
+  FcEngineering,
   FcManager,
-} from 'react-icons/fc'
+} from 'react-icons/fc';
+import {GlowCard} from "../../components/GlowCard"
 
-interface CardProps {
-  heading: string
-  description: string
-  icon: ReactElement
-  href: string
-}
-
-const Card = ({ heading, description, icon, href }: CardProps) => {
-  return (
-    <Box
-      maxW={{ base: 'full', md: '275px' }}
-      w={'full'}
-      borderWidth="1px"
-      borderRadius="lg"
-      overflow="hidden"
-      p={5}>
-      <Stack align={'start'} spacing={2}>
-        <Flex
-          w={16}
-          h={16}
-          align={'center'}
-          justify={'center'}
-          color={'white'}
-          rounded={'full'}
-          bg={useColorModeValue('gray.100', 'gray.700')}>
-          {icon}
-        </Flex>
-        <Box mt={2}>
-          <Heading size="md">{heading}</Heading>
-          <Text mt={1} fontSize={'sm'}>
-            {description}
-          </Text>
-        </Box>
-        <Button variant={'link'} colorScheme={'blue'} size={'sm'}>
-          Learn more
-        </Button>
-      </Stack>
-    </Box>
-  )
-}
 
 export default function Features() {
   return (
@@ -67,44 +29,41 @@ export default function Features() {
     >
       <Stack spacing={4} as={Container} maxW={'3xl'} textAlign={'center'}>
         <Heading fontSize={{ base: '2xl', sm: '4xl' }} fontWeight={'bold'}>
-          Short heading
+          Laminar
         </Heading>
-        <Text color={'gray.600'} fontSize={{ base: 'sm', sm: 'lg' }}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis obcaecati ut
-          cupiditate pariatur, dignissimos, placeat amet officiis.
+        <Text color={'gray.500'} fontSize={{ base: 'sm', sm: 'lg' }}>
+          Seminar tentang AI, Software, dan IoT.
         </Text>
       </Stack>
 
       <Container maxW={'5xl'} mt={12}>
         <Flex flexWrap="wrap" gridGap={6} justify="center">
-          <Card
-            heading={'Heading'}
-            icon={<Icon as={FcAssistant} w={10} h={10} />}
-            description={'Lorem ipsum dolor sit amet catetur, adipisicing elit.'}
-            href={'#'}
-          />
-          <Card
-            heading={'Heading'}
+          <GlowCard
+            cardType='icon'
+            heading={'Seminar AI'}
             icon={<Icon as={FcCollaboration} w={10} h={10} />}
-            description={'Lorem ipsum dolor sit amet catetur, adipisicing elit.'}
+            description={'Seminar ini akan membahas tentang AI, Software, dan IoT.'}
             href={'#'}
           />
-          <Card
-            heading={'Heading'}
-            icon={<Icon as={FcDonate} w={10} h={10} />}
-            description={'Lorem ipsum dolor sit amet catetur, adipisicing elit.'}
+          <GlowCard
+            cardType='icon'
+            heading={'Pelatihan Robotik, IoT, dan  3D printing'}
+            icon={<Icon as={FcElectronics} w={10} h={10} />}
+            description={'Khusus kamu yang ingin mempersiapkan diri untuk industri masa depan.'}
             href={'#'}
           />
-          <Card
-            heading={'Heading'}
-            icon={<Icon as={FcManager} w={10} h={10} />}
-            description={'Lorem ipsum dolor sit amet catetur, adipisicing elit.'}
+          <GlowCard
+            cardType='icon'
+            heading={'Pelatihan Software'}
+            icon={<Icon as={FcSmartphoneTablet} w={10} h={10} />}
+            description={'Jika kamu ingin membuat aplikasi untuk Android atau iOS, ataupun website disini tempatnya.'}
             href={'#'}
           />
-          <Card
-            heading={'Heading'}
-            icon={<Icon as={FcAbout} w={10} h={10} />}
-            description={'Lorem ipsum dolor sit amet catetur, adipisicing elit.'}
+          <GlowCard
+            cardType='icon'
+            heading={'Neptune Science Fair'}
+            icon={<Icon as={FcEngineering} w={10} h={10} />}
+            description={'Pertunjukan ilmiah dengan berbagai macam koleksi eksperimen yang bisa dicoba langsung oleh murid.'}
             href={'#'}
           />
         </Flex>
