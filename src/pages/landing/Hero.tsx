@@ -28,7 +28,7 @@ export default function Hero() {
             fontWeight={700}
             lineHeight={1.2}
             fontSize={useBreakpointValue({ base: 'md', md: 'lg' })}>
-            Jadilah generasi penerus bangsa yang siap menghadapi persaingan
+            Ikuti seminar dan jadilah generasi penerus bangsa yang siap menghadapi persaingan
           </Text>
           <Stack direction={'row'}>
             <Button
@@ -46,7 +46,7 @@ export default function Hero() {
                 _focus={{
                 bg: 'blue.500',
                 }}>
-                Daftarkan Sekolahmu
+                Lihat isi seminar
             </Button>
           </Stack>
         </Stack>

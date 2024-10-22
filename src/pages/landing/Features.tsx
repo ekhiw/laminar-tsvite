@@ -29,10 +29,10 @@ export default function Features() {
     >
       <Stack spacing={4} as={Container} maxW={'3xl'} textAlign={'center'}>
         <Heading fontSize={{ base: '2xl', sm: '4xl' }} fontWeight={'bold'}>
-          Laminar
+          Laminar by PT Dispersi Edu Trisapta
         </Heading>
         <Text color={'gray.500'} fontSize={{ base: 'sm', sm: 'lg' }}>
-          Seminar tentang AI, Software, dan IoT.
+          Laminar yang berarti fluida yang bergerak mulus dan konsisten, sesuai keinginan kami yang ingin membantu pendidikan di Indonesia secara konsisten.
         </Text>
       </Stack>
 

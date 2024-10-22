@@ -57,9 +57,6 @@ export default function Footer() {
             align={{ base: 'center', md: 'center' }}>
             <Text>© 2024 PT Dispersi Edu Trisapta. All rights reserved</Text>
             <Stack direction={'row'} spacing={6}>
-            <SocialButton label={'Twitter'} href={'#'}>
-                <FaTwitter />
-            </SocialButton>
             <SocialButton label={'YouTube'} href={'#'}>
                 <FaYoutube />
             </SocialButton>

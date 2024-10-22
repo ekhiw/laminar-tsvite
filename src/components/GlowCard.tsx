@@ -24,7 +24,7 @@ interface CardProps {
 }
 
 export const GlowCard = ({ heading, description, icon, href, avatar, name , cardType }: CardProps) => {
-  const bgColor = useColorModeValue('white', "linear(gray.900, gray.700, teal.900)")
+  const bgColor = useColorModeValue('white', "linear(rgba(23, 25, 35, 0.75), rgba(45, 55, 72, 0.75), rgba(40, 94, 97, 0.75))")
   const iconBgColor = useColorModeValue('gray.100', 'gray.700')
 
   const pulseRing = keyframes`
