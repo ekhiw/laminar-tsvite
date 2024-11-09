@@ -8,6 +8,7 @@ import {
     Heading,
     VStack
 } from '@chakra-ui/react'
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import portoImage1 from "../../assets/porto1.jpg";
 import portoImage2 from "../../assets/porto2.jpg";
@@ -133,25 +134,10 @@ export default function Gallery() {
                                 backgroundRepeat="no-repeat"
                                 backgroundSize="cover"
                                 rounded={['xl', '2xl']}
-                                backgroundImage={`url(${card.image})`}>
-                                    <Container h={'full'} w={'full'} position="relative">
-                                        <Stack
-                                            spacing={6}
-                                            w={'full'}
-                                            maxW={'lg'}
-                                            px={[12,0]}
-                                            position="absolute"
-                                            textAlign={'center'}
-                                            top="50%"
-                                            transform="translate(0, -50%)">
-                                            {/* <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}>
-                                            {card.title}
-                                            </Heading>
-                                            <Text fontSize={{ base: 'md', lg: 'lg' }} color="white">
-                                            {card.text}
-                                            </Text> */}
-                                        </Stack>
-                                    </Container>
+                                overflow={["hidden", "hidden"]}>
+                                  <LazyLoadImage
+                                  alt={card.title}
+                                  src={card.image}/>
                                 </Box>
                                 
                             </SwiperSlide>
