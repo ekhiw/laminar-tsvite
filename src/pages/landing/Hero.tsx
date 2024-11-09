@@ -28,7 +28,7 @@ export default function Hero() {
             fontWeight={700}
             lineHeight={1.2}
             fontSize={useBreakpointValue({ base: 'md', md: 'lg' })}>
-            Ikuti seminar dan jadilah generasi penerus bangsa yang siap menghadapi persaingan
+            Bersama LAMINAR jadilah generasi penerus bangsa yang siap menghadapi persaingan
           </Text>
           <Stack direction={'row'}>
             <Button

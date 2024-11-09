@@ -4,7 +4,7 @@ import {
   forwardRef,
   usePrefersReducedMotion,
 } from "@chakra-ui/react"
-import logo from "../assets/react.svg"
+import logo from "../assets/LAM.svg"
 import { keyframes } from '@emotion/react'
 
 const spin = keyframes`

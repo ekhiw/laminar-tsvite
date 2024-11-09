@@ -6,6 +6,7 @@ import {
   } from '@chakra-ui/react'
 import { GlowCard } from '../../components/GlowCard'
 import ekhiw from "../../assets/ekhiw.jpg";
+import dimas from "../../assets/dimas.jpg";
 
 export default function Person() {
     return (
@@ -20,8 +21,8 @@ export default function Person() {
             <GlowCard
             cardType="avatar"
             heading="Hi, Saya Muhammad Dimas Alifianda 👋"
-            description="Saya adalah seorang bajak laut yang suka menyanyikan lagu-lagu. Jika kamu ingin mengikuti saya silahkan ikuti saya di youtube saya."
-            avatar={ekhiw}
+            description="Saya adalah seorang komputer expert dan pakar permainan edukasi,pembicara science goes to school, sejak tahun 2014."
+            avatar={dimas}
             />
             <GlowCard
             cardType="avatar"

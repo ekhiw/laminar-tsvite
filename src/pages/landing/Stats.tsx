@@ -39,8 +39,8 @@ export default function BasicStat() {
         Berapa sih jumlah kegiatan dan peserta dari Laminar?
       </chakra.h1>
       <SimpleGrid columns={{ base: 1, md: 3 }} spacing={{ base: 5, lg: 8 }}>
-        <StatsCard title={'Peserta'} stat={'4200 Siswa'} />
-        <StatsCard title={'Lokasi'} stat={'80 Sekolah'} />
+        <StatsCard title={'Diikuti oleh'} stat={'Lebih dari 1 Juta siswa'} />
+        <StatsCard title={'Lokasi'} stat={'Ribuan Sekolah'} />
         <StatsCard title={'Sejak'} stat={'2018'} />
       </SimpleGrid>
     </Box>

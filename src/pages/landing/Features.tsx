@@ -16,7 +16,7 @@ import {
   FcCollaboration,
   FcElectronics,
   FcEngineering,
-  FcManager,
+  FcMultipleDevices,
 } from 'react-icons/fc';
 import {GlowCard} from "../../components/GlowCard"
 
@@ -42,29 +42,31 @@ export default function Features() {
             cardType='icon'
             heading={'Seminar AI'}
             icon={<Icon as={FcCollaboration} w={10} h={10} />}
-            description={'Seminar ini akan membahas tentang AI, Software, dan IoT.'}
-            href={'#'}
+            description={'Seminar ini akan membahas tentang AI, Software, dan IoT(Internet of Things).'}
           />
           <GlowCard
             cardType='icon'
             heading={'Pelatihan Robotik, IoT, dan  3D printing'}
             icon={<Icon as={FcElectronics} w={10} h={10} />}
             description={'Khusus kamu yang ingin mempersiapkan diri untuk industri masa depan.'}
-            href={'#'}
           />
           <GlowCard
             cardType='icon'
             heading={'Pelatihan Software'}
             icon={<Icon as={FcSmartphoneTablet} w={10} h={10} />}
             description={'Jika kamu ingin membuat aplikasi untuk Android atau iOS, ataupun website disini tempatnya.'}
-            href={'#'}
           />
           <GlowCard
             cardType='icon'
             heading={'Neptune Science Fair'}
             icon={<Icon as={FcEngineering} w={10} h={10} />}
             description={'Pertunjukan ilmiah dengan berbagai macam koleksi eksperimen yang bisa dicoba langsung oleh murid.'}
-            href={'#'}
+          />
+          <GlowCard
+            cardType='icon'
+            heading={'Penyedia Komputer'}
+            icon={<Icon as={FcMultipleDevices} w={10} h={10} />}
+            description={'Jual beli Komputer baru atau bekas untuk kebutuhan perkantoran dan jasa instalasi komputer'}
           />
         </Flex>
       </Container>
